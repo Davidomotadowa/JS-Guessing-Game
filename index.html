@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>CALCULATOR</h1>
+      <input type="number" id="num1" placeholder="Number 1" />
+      <br />
+      <input type="text" id="operator" placeholder="Operator (+, -, *, /)" />
+      <br />
+      <input type="number" id="num2" placeholder="Number 2" />
+      <br />
+      <button onclick="performCalculation()">Calculate</button>
+      <div id="result"></div>
+    </div>
+    <div class="library">
+      <h1>LIBRARY</h1>
+      <h2>Add New Book</h2>
+      <input type="text" id="title" placeholder="Title" />
+      <input type="text" id="author" placeholder="Author" />
+      <input type="number" id="year" placeholder="Year" />
+      <input type="text" id="genre" placeholder="Genre" />
+      <button onclick="addBook()">Add Book</button>
+
+      <h2>Search Book by Title</h2>
+      <input type="text" id="searchTitle" placeholder="Search by Title" />
+      <button onclick="searchBook()">Search</button>
+      <div id="searchResult"></div>
+
+      <h2>All Books</h2>
+      <button onclick="displayBooks()">Display All Books</button>
+      <ul id="bookList"></ul>
+
+      <h2>Update Book Information</h2>
+      <input
+        type="text"
+        id="updateTitle"
+        placeholder="Title of book to update"
+      />
+      <input type="text" id="newTitle" placeholder="New Title" />
+      <input type="text" id="newAuthor" placeholder="New Author" />
+      <input type="number" id="newYear" placeholder="New Year" />
+      <input type="text" id="newGenre" placeholder="New Genre" />
+      <button onclick="updateBook()">Update Book</button>
+
+      <h2>Remove Book</h2>
+      <input
+        type="text"
+        id="removeTitle"
+        placeholder="Title of book to remove"
+      />
+      <button onclick="removeBook()">Remove Book</button>
+    </div>
+    <div class="guess">
+      <h1>GUESSING GAME</h1>
+      <input type="number" id="guessInput" placeholder="Guess the number" />
+      <button onclick="guess()">submit</button>
+      <p id="reply"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
